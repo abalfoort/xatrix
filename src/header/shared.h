@@ -291,6 +291,9 @@ typedef struct cvar_s
 	qboolean modified; /* set each time the cvar is changed */
 	float value;
 	struct cvar_s *next;
+    
+    // ------ Flaregun stuff ------
+    int         integer;
 } cvar_t;
 
 #endif /* CVAR */
@@ -598,6 +601,7 @@ typedef struct
 #define MZ_NUKE2 37
 #define MZ_NUKE4 38
 #define MZ_NUKE8 39
+#define MZ_FLARE 40
 
 /* monster muzzle flashes */
 #define MZ2_TANK_BLASTER_1 1
@@ -889,7 +893,8 @@ typedef enum
 	TE_WIDOWSPLASH,
 	TE_EXPLOSION1_BIG,
 	TE_EXPLOSION1_NP,
-	TE_FLECHETTE
+	TE_FLECHETTE,
+	TE_FLARE
 } temp_event_t;
 
 #define SPLASH_UNKNOWN 0

@@ -219,6 +219,7 @@ typedef struct
 #define WEAP_BFG 11
 #define WEAP_PHALANX 12
 #define WEAP_BOOMER 13
+#define WEAP_FLAREGUN 14
 
 typedef struct gitem_s
 {
@@ -539,6 +540,8 @@ extern cvar_t *flood_persecond;
 extern cvar_t *flood_waitdelay;
 
 extern cvar_t *sv_maplist;
+
+extern  cvar_t  *sv_flaregun;
 
 extern cvar_t *aimfix;
 extern cvar_t *g_machinegun_norecoil;
